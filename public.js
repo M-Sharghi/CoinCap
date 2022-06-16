@@ -7,9 +7,9 @@ search_click.addEventListener("click",function(){
 });
 
 
-let view_more=document.querySelector(".view_more");
-view_more.addEventListener("click",function(){
-    get_data().then(function(){
-        render_list(coins);
-    });
-});
+// let view_more=document.querySelector(".view_more");
+// view_more.addEventListener("click",function(){
+//     get_data().then(function(){
+//         render_list(coins);
+//     });
+// });
