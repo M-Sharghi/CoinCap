@@ -110,7 +110,4 @@ get_data().then(function(){
     render_list(coins);
 });
 
-get_data().then(function(){
-    render_list(coins);
-});
 
