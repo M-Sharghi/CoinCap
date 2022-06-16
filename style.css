@@ -1,0 +1,287 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    ;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+}
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0px 260px;
+    margin: 8px 0px;
+    height: 6%;
+}
+.nav a{
+margin: 4px;
+font-size: 12px;
+font-weight: 500;
+color: rgba(62, 58, 58, 0.87);
+}
+.coincap{
+    width: 80px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-right .button ,.view_more ,.asset_view_more , .Connect_Wallet, .asset_headers_btn_website{
+    border-radius: 48px;
+    border: none;
+    background-color: #18c683;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+.view_more{
+    transform: translateY(-110px);
+    margin: 16px;
+}
+.asset_view_more{
+    margin: 16px;
+}
+.nav-right img{
+    margin: 0 12px;
+}
+.hide{
+    display:none;
+}
+.show{
+    display:block; 
+    overflow: visible;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 280px 128px;
+    background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) rgb(255, 255, 255);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+.asset_header{
+    padding-bottom: 24px;
+}
+.asset_headers{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 32px;
+
+}
+section{
+    background: rgb(236, 239, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ax{
+    display: flex;
+}
+.icon{
+    width: 36px;
+    padding-right: 8px;
+}
+.list{
+    border-radius: 4px;
+    background: #fff;
+    transform: translateY(-110px);
+    width: 70%;
+}
+.row , .row1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #ccc;
+    padding: 11px 32px;
+}
+.row1{
+    background-color: rgb(236, 239, 241);
+    border-radius: 4px;
+}
+.image{
+    align-items: center;
+}
+.column{
+    width: 70%;
+    text-align:left;
+}
+.name{
+    padding-right: 256px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align:justify;
+    background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 24px 280px;
+    transform: translateY(-110px);
+}
+.footer a , p {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 20;
+    line-height: 24px;
+}
+.footer .image{
+    width: 128px;
+    height: 32px;
+    margin: 2px;
+}
+.asset_footer{
+    display: flex;
+    justify-content: space-between;
+    text-align:justify;
+    background-image: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246));
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 24px 280px;
+}
+.asset_footer a, p{
+    color: #fff;
+    opacity: 0.5;
+    font-size: 12px;
+    font-weight: 20;
+    line-height: 24px;
+}
+.asset_footer .image{
+    width: 128px;
+    height: 32px;
+    margin: 2px;
+}
+.asset_chart{
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+}
+.asset_container{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 24px 280px;
+}
+.display{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+}
+.asset_list{
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    margin-top: 36px;
+}
+.white_list{
+    padding: 0px 280px;
+}
+.section1{
+    background: rgba(99, 98, 98, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.white_list_container{
+    background-color: #fff;
+    border-radius: 4px;
+}
+.asset_swap{
+    width: 350px;
+    height: 500px;
+    border-radius: 13px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 9px;
+    border: 0px;
+}
+.asset_swap_container{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+.asset_swap_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.asset_swap_sell_container{
+    background: rgb(249, 249, 249);
+    border: 1px solid rgb(236, 239, 241);
+    border-radius: 12px;
+    margin-bottom: 32px;
+}
+.asset_swap_sell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+#asset{
+    border: none;
+}
+.shuffle{
+    width: 24px;
+    margin: 0px 0px 32px 20px;
+    max-width: 25px;
+}
+form{
+    right: 12px;
+    bottom: 0px;
+}
+.Connect_Wallet{
+    align-items: center;
+    margin: 16px auto;
+    padding: 16px 64px;
+    font-size: 16px;
+    font-weight: 800;
+}
+#charttt{
+    width: 650px;
+    height: 500px;
+}
+.esm{
+    display: flex;
+    width: 70%;
+    text-align:left;
+    padding-right: 256px;
+    align-items: center;
+}
+.asset-head{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.flag{
+    width: 56px;
+    height: 90px;
+    background-color: #18c683;
+    border-radius: 12px;
+    margin-top: 32px;
+}
+.asset_headers_btn{
+    display: flex;
+    flex-direction: column;
+}
+.asset_headers_btn_website{
+    margin-top: 24px;
+    width: 108px;
+    height: 32px;
+}

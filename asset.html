@@ -1,0 +1,145 @@
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CoinCap.io</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/numbro@2.3.6/dist/numbro.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav">
+                <div class="nav-left">
+                    <a href="./index.html">Coins</a>
+                    <a href="./exchanges.html">Exchanges</a>
+                    <a href="#">Swap</a>
+                </div>
+                <a  href="#" class="nav-center"><img src="./assets/img/black.svg" alt="coincap" class="coincap"></a>
+                <div class="nav-right">
+                    <input class="hide" type="text" id="textInput"><img src="./assets/img/search.svg" alt="search" class="search"></input>
+                    <a href="#"><img src="./assets/img/gear-fill.svg" alt="settings"></a>
+                    <a href="#" class="button">Connect Wallet</a>
+                </div>
+            </div>
+        <header class="asset_header">
+            <span class="flag">
+                <h1>1</h1>
+                <h6>RANK</h6>
+            </span>
+            <span class="asset-head">Bitcoin (BTC)<br><br>$21,726.10</span>
+            <span><br></span>
+            <div class="asset_headers_btn">
+                <span class="asset_headers">Market Cap<br>$415.35b</span>
+                <span class="asset_headers_btn_website">Website</span>
+            </div>
+            <div class="asset_headers_btn">
+                <span class="asset_headers">Volume (24Hr)<br>$23.77b</span>
+                <span class="asset_headers_btn_website">Explorer</span>
+            </div>
+            <span class="asset_headers">Supply<br>19.07m BTC</span>
+        </header>
+        <section>
+            <div class="asset_chart">
+                <div class="asset_container">
+                    <div class="display">
+                        <div class="chart_container">
+                            <div id="charttt"></div>
+                        </div>
+                        <div class="asset_swap">
+                            <div class="asset_swap_container">
+                            <div class="asset_swap_header">
+                                <h2>Swap</h2>
+                                <a href="#"><img src="./assets/img/gear-fill.svg" alt="settings"></a>
+                            </div>
+                            <div class="asset_swap_sell_container">
+                                <div class="asset_swap_sell">
+                                    <div class="asset_swap_sell_left">
+                                        <h3>You Sell</h3>
+                                        <span>0</span>
+                                    </div>
+                                    <form action="#">
+                                        <label for="asset"></label>
+                                        <select name="languages" id="asset" style="background-color:inherit; font-size: 18px; font-weight: bold;">
+                                            <option value="javascript">ETH</option>
+                                            <option value="php">BTC</option>
+                                            <option value="java">USDT</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                            <div><img src="https://coincap.io/static/icons/shuffle.svg" alt="shuffle" class="shuffle"></div>
+                            <div class="asset_swap_sell_container">
+                                <div class="asset_swap_sell">
+                                    <div class="asset_swap_sell_left">
+                                        <h3>You Get</h3>
+                                        <span>0</span>
+                                    </div>
+                                    <form action="#">
+                                        <label for="asset"></label>
+                                        <select name="languages" id="asset" style="background-color:inherit; font-size: 18px; font-weight: bold">
+                                            <option>Select a token</option>
+                                            <option>ETH</option>
+                                            <option>BTC</option>
+                                            <option>USDT</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
+                            <a href="#" class="Connect_Wallet">Connect Wallet</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        <div class="section1">
+            <div class="asset_list">
+                <div class="white_list">
+                    <div class="white_list_container">
+                        <div class="row1">
+                            <a href="#" class="column">Exchange</a>
+                            <a href="#" class="column name">Price</a>
+                            <a href="#" class="column">Volume (24Hr)</a>
+                            <a href="#" class="column">Volume (%)</a>
+                            <a href="#" class="column">Status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="asset_view_more">View More</a>
+        </div>         
+        <footer class="asset_footer">
+            <div>COINCAP.IO<br><br>
+                <div><a href="#">Methodology</a></div>
+                <div><a href="#">Support</a></div>
+                <div><a href="#">Our API</a></div>
+                <div><a href="#">Rate Comparison</a></div>
+                <div><a href="#">Careers</a></div>
+            </div>
+            <div>LEGALS<br><br>
+                <div><a href="#">Terms of Service</a></div>
+                <div><a href="#">Privacy Policy</a></div>
+                <br>DISCLAIMER
+                <p>Neither ShapeShift AG nor CoinCap are in<br>any way associated with CoinMarketCap,<br>LLC or any of its goods and services.</p>
+            </div>
+            <div>FOLLOW US<br><br>
+                <div>
+                    <a href="#"><img src="./assets/img/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="./assets/img/iconmonstr-facebook-6.svg" alt="facebook"></a>
+                </div>
+            </div>
+            <div>COINCAP APP AVAILABLE ON<br><br>
+                <div><a href="#"><img src="./assets/img/google_play.svg" alt="Google Play" class="image"></a></div>
+                <div><a href="#"><img src="./assets/img/apple_store.svg" alt="App Store" class="image"></a></div>
+            </div>
+        </footer>
+        <script src="./public.js"></script>
+        <script src="./asset.js"></script>
+        <script src="./exchanges.js"></script>
+    </body>
+</html>
