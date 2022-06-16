@@ -70,14 +70,10 @@ function exchange_render_item(rank,name,tradingPairs,volumeUsd,percentTotalVolum
     socket_element.classList.add("column");
     socket_element.setAttribute("href","#");
     if (socket!==null){
-        if(socket==true){
-            socket_element.textContent= "🟢";
-        }else{
-            socket_element.textContent= "🔴";
-        }
+        socket_element.textContent= "🟢";
     }else{
-        socket_element.textContent="-";
-    }
+        socket_element.textContent= "🔴";
+        }
     ex_item_element.appendChild(socket_element);
 };
 
