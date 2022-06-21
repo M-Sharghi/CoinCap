@@ -19,3 +19,9 @@ function toggle_modal() {
 
 settings_btn.addEventListener("click", toggle_modal);
 close_btn.addEventListener("click", toggle_modal);
+
+window.onclick=function(event){
+    if (event.target==modal){
+        modal.classList.remove("show")
+    }
+}

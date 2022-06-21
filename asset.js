@@ -1,50 +1,55 @@
-function getData() {
-    return [
-      ['1990',12],
-      ['1991',14],
-      ['1993',21],
-      ['1994',21],
-      ['1996',26],
-      ['1998',26],
-      ['2000',27],
-      ['2002',31],
-      ['2004',29],
-      ['2006',31],
-      ['2008',36],
-      ['2010',41],
-      ['2012',42],
-      ['2014',48],
-      ['2016',50],
-      ['2018',57]
-    ];
-  }
+
+/* Coin's Chart */
 
 
-// create a data set on our data
-var dataSet = anychart.data.set(getData());
+let params = new URLSearchParams(document.location.search);
+let coin_name = params.get("coin");
 
-// map data for the line chart,
-// take x from the zero column and value from the first column
-var seriesData = dataSet.mapAs({ x: 0, value: 1 });
+function coin_url(name) {
+  return `https://api.coincap.io/v2/assets/${name}/history?interval=d1`;
+}
 
-// create a line chart
-var chart = anychart.line();
+async function get_coin() {
+  let url = coin_url(coin_name);
+  let respons = await fetch(url);
+  let json = await respons.json();
 
-// configure the chart title text settings
-chart.title('Asset Name');
+  let data = json.data;
 
-// set the y axis title
-// chart.yAxis().title('% of people who accept same-sex relationships');
+  let yValues = [];
+  let xValues = [];
 
-// create a line series with the mapped data
-var lineChart = chart.line(seriesData);
+  data.forEach((item) => {
+    yValues.push(item.priceUsd);
+    xValues.push(item.time);
+  });
 
-// set the container id for the line chart
-chart.container('charttt');
+  return {
+    x: xValues,
+    y: yValues,
+  };
+}
 
-// draw the line chart
-chart.draw();
+// ---  render CoinData to Page -----
 
+get_coin().then(function (values) {
+  new Chart("myChart", {
+    type: "bar",
+    data: {
+      labels: values.x,
+      datasets: [
+        {
+          backgroundColor: "rgba(238,130,238,0.5)",
+          borderColor: "rgba(255,0,0,1)",
+          data: values.y,
+        },
+      ],
+    },
+    options: { yValues: values.y },
+  });
+});
+
+/*=====================================================================================*/
 
 
 /* fetch info && render data for asset page */
