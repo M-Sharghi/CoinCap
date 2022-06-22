@@ -30,6 +30,7 @@ color: rgba(62, 58, 58, 0.87);
 }
 .coincap{
     width: 80px;
+    cursor: pointer;
 }
 .nav-right{
     display: flex;
@@ -180,6 +181,14 @@ section{
     font-weight: 600;
     padding: 24px 280px;
 }
+.asset_container_main{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0 auto;
+    background-color: rgb(236, 239, 241);
+    margin-bottom: 128px;
+    margin-top: 64px;
+}
 .display{
     display: flex;
     justify-content:space-between;
@@ -213,6 +222,15 @@ section{
     background: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 9px;
     border: 0px;
+}
+.asset_swap_main{
+    width: 500px;
+    height:500px;
+    border-radius: 13px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 9px;
+    border: 0px;
+    margin:  auto;
 }
 .asset_column{
     padding-left: 128px;

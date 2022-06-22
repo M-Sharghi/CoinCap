@@ -1,9 +1,9 @@
 
 /* Coin's Chart */
 
-
 let params = new URLSearchParams(document.location.search);
 let coin_name = params.get("coin");
+
 
 function coin_url(name) {
   return `https://api.coincap.io/v2/assets/${name}/history?interval=d1`;
