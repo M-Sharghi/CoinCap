@@ -31,7 +31,7 @@ function render_item(rank,symbol,name,priceUsd,marketCapUsd,vwap24Hr,supply,volu
 
     let a_element=document.createElement("a");
     a_element.classList.add("esm");
-    a_element.setAttribute("href","./asset.html");
+    a_element.setAttribute("href",`./asset.html?coin=${name.toLowerCase()}`);
     item_element.appendChild(a_element);
 
     let icon_name_element=document.createElement("img");

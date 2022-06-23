@@ -1,6 +1,5 @@
 
 /* Coin's Chart */
-
 let params = new URLSearchParams(document.location.search);
 let coin_name = params.get("coin");
 
@@ -34,7 +33,7 @@ async function get_coin() {
 
 get_coin().then(function (values) {
   new Chart("myChart", {
-    type: "bar",
+    type: "line",
     data: {
       labels: values.x,
       datasets: [
