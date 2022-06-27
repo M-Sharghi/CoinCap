@@ -121,8 +121,18 @@ section{
     width: 70%;
     text-align:left;
 }
+.column_right{
+    width: 100%;
+    text-align:right;
+}
 .name{
-    padding-right: 256px;
+    padding-right: 128px;
+}
+.esm{
+    display: flex;
+    width: 70%;
+    text-align:left;
+    align-items: center;
 }
 .footer{
     display: flex;
@@ -279,13 +289,6 @@ form{
 #charttt{
     width: 650px;
     height: 500px;
-}
-.esm{
-    display: flex;
-    width: 70%;
-    text-align:left;
-    padding-right: 256px;
-    align-items: center;
 }
 .asset-head{
     font-size: 24px;

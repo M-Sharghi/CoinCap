@@ -47,21 +47,21 @@ function render_item(rank,symbol,name,priceUsd,marketCapUsd,vwap24Hr,supply,volu
 
 
     let price_element=document.createElement("a");
-    price_element.classList.add("column");
+    price_element.classList.add("column_right");
     price_element.setAttribute("href","#");
     price_element.textContent=numbro(priceUsd).formatCurrency('$0,0.00');
     item_element.appendChild(price_element);
 
 
     let market_cap_element=document.createElement("a");
-    market_cap_element.classList.add("column");
+    market_cap_element.classList.add("column_right");
     market_cap_element.setAttribute("href","#");
     market_cap_element.textContent=numbro(marketCapUsd).formatCurrency('($ 0.00 a)');
     item_element.appendChild(market_cap_element);
 
 
     let vwap_element=document.createElement("a");
-    vwap_element.classList.add("column");
+    vwap_element.classList.add("column_right");
     vwap_element.setAttribute("href","#");
     if (vwap24Hr!==null){
         vwap_element.textContent=numbro(vwap24Hr).formatCurrency('$0,0.00');
@@ -72,7 +72,7 @@ function render_item(rank,symbol,name,priceUsd,marketCapUsd,vwap24Hr,supply,volu
 
 
     let supply_element=document.createElement("a");
-    supply_element.classList.add("column");
+    supply_element.classList.add("column_right");
     supply_element.setAttribute("href","#");
     if (supply!==null){
         supply_element.textContent=numbro(supply).format('4a');
@@ -83,16 +83,16 @@ function render_item(rank,symbol,name,priceUsd,marketCapUsd,vwap24Hr,supply,volu
 
 
     let volume_element=document.createElement("a");
-    volume_element.classList.add("column");
+    volume_element.classList.add("column_right");
     volume_element.setAttribute("href","#");
     volume_element.textContent=numbro(volumeUsd24Hr).formatCurrency('($ 0.00 a)');
     item_element.appendChild(volume_element);
 
 
     let change_element=document.createElement("a");
-    change_element.classList.add("column");
+    change_element.classList.add("column_right");
     change_element.setAttribute("href","#");
-    change_element.textContent=numbro(changePercent24Hr).format('3a');
+    change_element.textContent=numbro(changePercent24Hr).format('3a')+"%";
     item_element.appendChild(change_element);
 
 };
